@@ -1,4 +1,5 @@
 #include "getSemesterCount.h"
+#include "calculateGPA.h"
 
 #include <iostream>
 
