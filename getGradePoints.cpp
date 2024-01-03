@@ -1,7 +1,7 @@
 #include <iostream>
 
 //Gathers the grade for a given class from the user and returns the grade points
-double getGradePoints(int numClass, int units)
+double getGradePoints(int numClass, double units)
 {
   //Ensures the user inputs a valid grade, repeats if not
   while (true)

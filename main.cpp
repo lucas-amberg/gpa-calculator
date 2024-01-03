@@ -8,9 +8,25 @@
 //and return the calculated GPA.
 int main()
 {
-  std::cout << "Welcome to Lucas Amberg's GPA Calculator";
+  std::cout << "Welcome to Lucas Amberg's GPA Calculator\n\n";
 
-  int numSemesters{getSemesterCount()};
+  while(true)
+  {
 
+    int numSemesters{getSemesterCount()};
+
+    double GPA{calculateGPA(numSemesters)};
+
+    std::cout << "Your GPA is: " << GPA << "!\n";
+
+    std::cout << "Would you like to perform another calculation [y/n]? ";
+
+
+    char runAgain{};
+    std::cin >> runAgain;
+
+    if (runAgain != 'y' && runAgain != 'Y')
+      return 0;
+  }
   return 0;
 }
